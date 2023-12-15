@@ -20,7 +20,6 @@ const Home = () => {
         <meta name="description" content="Frankel Food Services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Navbar />
       <Hero />
       <SectionTitle
@@ -40,6 +39,7 @@ const Home = () => {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <Benefits data={benefitThree} />
+      {/*     
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
@@ -47,20 +47,47 @@ const Home = () => {
         This section is to highlight a promo or demo video of your product.
         Analysts says a landing page with video has 3% more conversion rate. So,
         don&apos;t forget to add one. Just like this.
-      </SectionTitle>
+      </SectionTitle> 
+    
       <Video />
+      */}
       <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
+        pretitle="Unveiling Our Purpose"
+        title="Our Mission Statement"
       >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        As a distinguished family-owned enterprise, Frankel specializes in
+        delivering bespoke repair and maintenance services tailored exclusively
+        for commercial kitchen equipment. Committed to upholding the highest
+        standards of excellence and possessing a profound understanding of the
+        intricacies within the food service industry, we have emerged as the
+        preferred choice for discerning businesses seeking unwaveringly reliable
+        solutions.
+        <br></br>
+        <br></br>
+        We comprehend the multifaceted challenges inherent in managing a
+        commercial kitchen and recognize the impracticality of engaging with
+        multiple service providers for diverse equipment repairs. This
+        underscores the essence of our One Call To Fix It All service, ensuring
+        comprehensive resolutions for repairs and maintenance across the
+        spectrum of makes and models found in your commercial kitchen.
+        <br></br>
+        <br></br>
+        <b>Our mission is unequivocal</b>: to sustain the seamless and efficient
+        operation of your commercial kitchen.
+        <br></br>
+        <br></br>
+        Acknowledging the pivotal role that well-functioning equipment plays in
+        your day-to-day operations, we are dedicated to preserving your kitchen
+        as a central nexus of productivity and success. Whether necessitating
+        prompt attention to emergency breakdowns, systematic preventative
+        maintenance, acquisition of new equipment, or meticulous kitchen
+        cleaning services, our family business brings forth a wealth of
+        expertise and dedicated resources to fulfill your exacting requirements.
       </SectionTitle>
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
+      <SectionTitle
+        pretitle="FAQ"
+        title="Frequently Asked Questions"
+      ></SectionTitle>
       <Faq />
       <SectionTitle
         id="contact"
@@ -69,7 +96,6 @@ const Home = () => {
       >
         Please contact us via
       </SectionTitle>
-
       {/* <Cta /> */}
       <Footer />
       <PopupWidget />

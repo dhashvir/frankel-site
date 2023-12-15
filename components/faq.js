@@ -31,26 +31,22 @@ const Faq = () => {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Where are you based?",
+    answer: "We provide our services in Melbourne",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "What is the best method to contact you?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Please you the contact section on this website to get latest contact information",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "What do your services cost?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Please contact us and we can provide a quote based on the services required",
   },
 ];
 
