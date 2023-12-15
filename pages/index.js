@@ -26,7 +26,7 @@ const Home = () => {
       <SectionTitle
         id="about"
         pretitle="Frankel Benefits"
-        title=" Why you should use choose us"
+        title=" Why You Should Choose Us"
       >
         Choose us for food service repairs and experience prompt, efficient
         solutions. Our skilled technicians specialize in diagnosing and fixing a
