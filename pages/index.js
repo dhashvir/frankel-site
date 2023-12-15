@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
+import { benefitOne, benefitThree, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -17,22 +17,29 @@ const Home = () => {
     <>
       <Head>
         <title>Frankel</title>
-        <meta name="description" content="Electrician for all your needs!" />
+        <meta name="description" content="Frankel Food Services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        id="about"
+        pretitle="Frankel Benefits"
+        title=" Why you should use choose us"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        Choose us for food service repairs and experience prompt, efficient
+        solutions. Our skilled technicians specialize in diagnosing and fixing a
+        range of kitchen equipment issues, ensuring minimal downtime. With
+        transparent communication, fair pricing, and a customer-centric
+        approach, we provide value and reliability for your kitchen's
+        operational needs. Trust us to keep your kitchen running smoothly,
+        allowing you to focus on delivering exceptional food and service to your
+        customers.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      <Benefits data={benefitThree} />
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
@@ -55,6 +62,14 @@ const Home = () => {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
+      <SectionTitle
+        id="contact"
+        pretitle="Contact Us"
+        title="Contact Information"
+      >
+        Please contact us via
+      </SectionTitle>
+
       {/* <Cta /> */}
       <Footer />
       <PopupWidget />
