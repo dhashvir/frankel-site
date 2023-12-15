@@ -22,7 +22,7 @@ const Navbar = () => {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
+                  <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100d">
                     <span>
                       <Image
                         src={logoImage}
@@ -32,7 +32,8 @@ const Navbar = () => {
                         className="w-8"
                       />
                     </span>
-                    <span>Frankel</span>
+                    <span className="mr-5">Frankel</span>
+                    <ThemeChanger />
                   </span>
                 </Link>
 
@@ -108,8 +109,6 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-
-          <ThemeChanger />
         </div>
       </nav>
     </div>
