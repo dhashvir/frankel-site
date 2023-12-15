@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "./container";
-import heroImg from "../public/res/logo.png";
+import heroImg from "../public/img/logo.png";
 
 const Hero = () => {
   const contactRef = "#contact";
@@ -22,8 +22,6 @@ const Hero = () => {
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href={contactRef}
-                target="_blank"
-                rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-blue-600 rounded-md "
               >
                 Contact Us

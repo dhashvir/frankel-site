@@ -4,13 +4,14 @@ import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
 import { benefitOne, benefitThree, benefitTwo } from "../components/data";
-import Video from "../components/video";
+//import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
-import Cta from "../components/cta";
+//import Testimonials from "../components/testimonials";
+//import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Contact from "../components/contact";
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
       <Video />
       */}
       <SectionTitle
+        id="mission"
         pretitle="Unveiling Our Purpose"
         title="Our Mission Statement"
       >
@@ -89,13 +91,7 @@ const Home = () => {
         title="Frequently Asked Questions"
       ></SectionTitle>
       <Faq />
-      <SectionTitle
-        id="contact"
-        pretitle="Contact Us"
-        title="Contact Information"
-      >
-        Please contact us via
-      </SectionTitle>
+      <Contact></Contact>
       {/* <Cta /> */}
       <Footer />
       <PopupWidget />

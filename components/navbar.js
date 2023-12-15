@@ -2,13 +2,13 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
-import logoImage from "../public/res/logo.png";
+import logoImage from "../public/img/logo.png";
 
 const Navbar = () => {
   const navigation = [
     { name: "About", href: "#about" },
     { name: "Our Services", href: "#services" },
-    // { name: "Our Clients", href: "#client" },
+    { name: "Our Mission", href: "#mission" },
   ];
 
   const contactRef = "#contact";
