@@ -4,6 +4,7 @@ import Container from "./container";
 
 const Benefits = (props) => {
   const { data } = props;
+  let align = props.imgPos;
   return (
     <>
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
@@ -13,7 +14,7 @@ const Benefits = (props) => {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}
         >
-          <div>
+          {/* <div>
             <Image
               src={data.image}
               width="521"
@@ -23,6 +24,16 @@ const Benefits = (props) => {
               placeholder="blur"
               blurDataURL={data.image.src}
             />
+          </div> */}
+
+          <div className="flex items-start mt-8 space-x-3">
+            <div className="flex items-center justify-center flex-shrink-0 mt-1 rounded-md w-full h-full">
+              {React.cloneElement(data.icon, {
+                className: `w-full h-full ${
+                  props.imgPos === "right" ? "text-yellow-300" : "text-blue-300"
+                }`,
+              })}
+            </div>
           </div>
         </div>
 
@@ -44,7 +55,12 @@ const Benefits = (props) => {
 
             <div className="w-full mt-5">
               {data.bullets.map((item, index) => (
-                <Benefit key={index} title={item.title} icon={item.icon}>
+                <Benefit
+                  key={index}
+                  title={item.title}
+                  icon={item.icon}
+                  imgPos={align}
+                >
                   {item.desc}
                 </Benefit>
               ))}
@@ -60,9 +76,15 @@ function Benefit(props) {
   return (
     <>
       <div className="flex items-start mt-8 space-x-3">
-        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-blue-500 rounded-md w-11 h-11 ">
+        <div
+          className={`flex items-center justify-center flex-shrink-0 mt-1 ${
+            props.imgPos === "right" ? "bg-yellow-500" : "bg-blue-500"
+          }  rounded-md w-11 h-11 `}
+        >
           {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-blue-50",
+            className: `w-7 h-7 ${
+              props.imgPos === "right" ? "text-yellow-50" : "text-blue-50"
+            }`,
           })}
         </div>
         <div>

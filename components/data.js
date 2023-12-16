@@ -8,15 +8,20 @@ import {
   UserCircleIcon,
   CheckBadgeIcon,
   ViewfinderCircleIcon,
+  CalendarIcon,
+  WrenchScrewdriverIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+// import benefitOneImg from "../public/img/repairs.png";
+// import benefitTwoImg from "../public/img/calendar.png";
+// import benefitThreeImg from "../public/img/installer.png";
 
 const benefitOne = {
   title: "Repairs and Services",
   desc: "At Frankel, our commitment is reflected in our unparalleled service standards.",
-  image: benefitOneImg,
+  // image: benefitOneImg,
+  icon: <WrenchScrewdriverIcon />,
   bullets: [
     {
       title: "Swiftest response time",
@@ -48,7 +53,8 @@ const benefitOne = {
 const benefitTwo = {
   title: "Planned Maintenance",
   desc: "Frankel's customized maintenance programs are designed to minimize costs and significantly mitigate the risk of kitchen Interruptions.",
-  image: benefitTwoImg,
+  //image: benefitTwoImg,
+  icon: <CalendarIcon />,
   bullets: [
     {
       title: "Cost Optimization",
@@ -71,7 +77,8 @@ const benefitTwo = {
 const benefitThree = {
   title: "Installation",
   desc: "Frankel handles electrical installations, ranging from single-piece projects to complete kitchen setups.",
-  image: benefitOneImg,
+  //image: benefitThreeImg,
+  icon: <UserGroupIcon />,
   bullets: [
     {
       title: "Skilled Electrical System Manager",
