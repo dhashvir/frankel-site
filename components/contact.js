@@ -2,8 +2,10 @@ import React from "react";
 import Container from "./container";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
-const EMAIL = "franktodaio1@gmail.com";
-const PHONE = "0432 227 547";
+const EMAIL = "franktodaro1@gmail.com";
+const PHONE = "+61432227547";
+const PHONE_DISPLAY = "0432 227 547";
+
 const Contact = () => {
   return (
     <Container
@@ -22,11 +24,9 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-left text-xl font-medium text-gray-800 dark:text-gray-200">
-                <a href="mailto:franktodaio1@gmail.com">Send us an email</a>
+                <a href={`mailto:${EMAIL}}`}>Send us an email</a>
               </h4>
-              <p className="mt-0 text-gray-500 dark:text-gray-400">
-                franktodaio1@gmail.com
-              </p>
+              <p className="mt-0 text-gray-500 dark:text-gray-400">{EMAIL}</p>
             </div>
           </div>
         </div>
@@ -38,10 +38,10 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-left text-xl font-medium text-gray-800 dark:text-gray-200">
-                <a href="tel:+61432227547">Call us</a>
+                <a href={`tel:+${PHONE}`}>Call us</a>
               </h4>
               <p className="mt-0 text-gray-500 dark:text-gray-400">
-                0432 227 547
+                {PHONE_DISPLAY}
               </p>
             </div>
           </div>
