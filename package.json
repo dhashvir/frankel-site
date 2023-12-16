@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gituhb.com/web3templates/nextly-template"
+    "url": "git@github.com:dhashvir/frankel-site.git"
   },
   "keywords": [
     "nextjs",
