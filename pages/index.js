@@ -17,8 +17,11 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Frankel</title>
-        <meta name="description" content="Frankel Food Services" />
+        <title>Frankel - Specializes in Food Services electrical repairs</title>
+        <meta
+          name="description"
+          content="Frankel specializes in delivering bespoke repair and maintenance services tailored exclusively for commercial kitchen equipment."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
