@@ -12,6 +12,7 @@ import Footer from "../components/footer";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import Contact from "../components/contact";
+import Testimonials from "../components/testimonials";
 
 const Home = () => {
   return (
@@ -55,6 +56,12 @@ const Home = () => {
     
       <Video />
       */}
+
+      <SectionTitle
+        pretitle="What our customers say"
+        title="Testimonials"
+      ></SectionTitle>
+      <Testimonials></Testimonials>
       <SectionTitle
         id="mission"
         pretitle="Unveiling Our Purpose"

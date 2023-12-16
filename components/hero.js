@@ -2,6 +2,31 @@ import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/logo.png";
 
+import bComenda from "../public/img/brands/comenda.jpeg";
+import bConvotherm from "../public/img/brands/convotherm.jpeg";
+import bFryMaster from "../public/img/brands/frymaster.jpeg";
+import bHennyPenny from "../public/img/brands/hennypenny.jpeg";
+import bHobart from "../public/img/brands/hobart.jpeg";
+import bMeiko from "../public/img/brands/meiko.jpeg";
+import bRational from "../public/img/brands/rational.jpeg";
+import bRoband from "../public/img/brands/roband.jpeg";
+import bRobotCoupe from "../public/img/brands/robot_coupe.jpeg";
+import bUnox from "../public/img/brands/unox.jpeg";
+import bWinterHalter from "../public/img/brands/winterhalter.jpeg";
+
+const BrandsImage = [
+  bComenda,
+  bConvotherm,
+  bFryMaster,
+  bHennyPenny,
+  bHobart,
+  bMeiko,
+  bRational,
+  bRoband,
+  bRobotCoupe,
+  bUnox,
+  bWinterHalter,
+];
 const Hero = () => {
   const contactRef = "#contact";
 
@@ -43,31 +68,27 @@ const Hero = () => {
           </div>
         </div>
       </Container>
-      {/* <Container>
+      <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by our customers
+            Trusted brands
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <AmazonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <VerizonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <MicrosoftLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <NetflixLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <SonyLogo />
-            </div>
+            {BrandsImage.map((item, index) => (
+              <Image
+                src={item}
+                width="120"
+                height="auto"
+                className={"object-contain"}
+                alt="Hero Illustration"
+                loading="eager"
+                placeholder="blur"
+              />
+            ))}
           </div>
         </div>
-      </Container> */}
+      </Container>
     </>
   );
 };
