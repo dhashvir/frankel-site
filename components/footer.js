@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}.
+          Copyright © {new Date().getFullYear()}
         </div>
       </Container>
       {/* Do not remove this */}
