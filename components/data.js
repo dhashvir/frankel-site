@@ -25,17 +25,17 @@ const benefitOne = {
   bullets: [
     {
       title: "Swiftest response time",
-      desc: "We boast the industry's swiftest response time",
+      desc: "We boast the industry's swiftest response time.",
       icon: <ClockIcon />,
     },
     {
       title: "Experienced technicians",
-      desc: "Team of exceptionally trained and experienced technicians",
+      desc: "Team of exceptionally trained and experienced technicians.",
       icon: <SparklesIcon />,
     },
     {
       title: "Distinguished first-time fix rate",
-      desc: "Setting a benchmark for excellence in the field",
+      desc: "Setting a benchmark for excellence in the field.",
 
       icon: <FaceSmileIcon />,
     },
@@ -82,12 +82,12 @@ const benefitThree = {
   bullets: [
     {
       title: "Skilled Electrical System Manager",
-      desc: "Our installers are trained to proficiently manage electrical systems",
+      desc: "Our installers are trained to proficiently manage electrical systems.",
       icon: <UserCircleIcon />,
     },
     {
       title: "Ensuring Professionalism",
-      desc: "Guaranteeing Professional Excellence",
+      desc: "Guaranteeing Professional Excellence.",
       icon: <CheckBadgeIcon />,
     },
     {
