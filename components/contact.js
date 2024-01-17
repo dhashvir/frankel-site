@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./container";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
-const EMAIL = "franktodaro1@gmail.com";
+const EMAIL = "info@frankel.com.au";
 const PHONE = "+61432227547";
 const PHONE_DISPLAY = "0432 227 547";
 
